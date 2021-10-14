@@ -20,6 +20,8 @@
 
   @include animation($properties: color fill);
 
+  @extend %link;
+
   &:hover,
   &:focus {
     color: $accent-Color;
