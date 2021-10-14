@@ -12,7 +12,7 @@
   align-items: $aling;
 }
 
-// @include centeredFlex(flex, space-between);
+// @include flex-center(flex, space-between);
 
 @mixin font-style(
   // $family: Roboto sans-serif,

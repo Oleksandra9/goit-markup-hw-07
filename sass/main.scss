@@ -1,7 +1,10 @@
+@import './base/reset';
 @import './base/global-style';
 @import './base/fonts/';
 @import './utils/mixins';
-
 @import './utils/variables';
+@import './components/header';
 @import './components/logo';
+@import './components/site-nav';
 @import './components/hero';
+@import './components/site-contacts';

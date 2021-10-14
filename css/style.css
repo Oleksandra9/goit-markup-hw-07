@@ -151,22 +151,6 @@ textarea {
   height: 4px;
 }
 
-/*----------------------- інші варіанти (header) -------------------*/
-
-/* .contacts-link:hover .icon-envelope {
-  fill: rgb(54, 240, 7);
-} */
-/* .icon-envelope {
-  background-color: brown,
-   fill: currentColor;
-} */
-/* .icon-envelope:hover,
-.icon-envelope:focus {
-  background-color: chartreuse;
-} */
-
-/* --------------------------------------------------------- */
-
 /*------------- LOGO-------------------- */
 
 .logo {
