@@ -28,26 +28,10 @@ body {
   margin-right: auto;
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 img {
   display: block;
   max-width: 100%;
   height: auto;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
-  clip: rect(0 0 0 0);
 }
 
 @font-face {
@@ -95,6 +79,17 @@ img {
   font-style: normal;
 }
 
+.section__title--hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
 .page-header {
   border-bottom: 1px solid #ececec;
 }
@@ -131,7 +126,7 @@ img {
 }
 
 .page-header__logo--color {
-  color: #212121;
+  color: black;
 }
 
 .site-nav {
@@ -149,7 +144,7 @@ img {
 }
 
 .site-nav__link {
-  color: #212121;
+  color: black;
   position: relative;
 }
 
@@ -304,6 +299,71 @@ img {
 }
 
 .page-header__logo--color {
-  color: #212121;
+  color: black;
+}
+
+.features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.features__item {
+  margin-right: 30px;
+  width: 270px;
+}
+
+.features__item:last-child {
+  margin-right: 0px;
+}
+
+.features_title {
+  color: black;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14286;
+  letter-spacing: 0.03em;
+}
+
+.features__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71429;
+  letter-spacing: 0.03em;
+}
+
+.features__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section__title {
+  color: black;
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16667;
+  letter-spacing: 0.03em;
 }
 /*# sourceMappingURL=main.css.map */
