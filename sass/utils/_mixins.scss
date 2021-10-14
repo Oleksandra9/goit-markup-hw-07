@@ -31,3 +31,14 @@
 // @include font-style(700, $size: 16px, $height: 30px, $spacing: 0.06em);
 
 // @include font-style(700, 16px, 30px, 0.06em);
+
+@mixin last-three($num) {
+  &:nth-last-child(3n + #{$num}) {
+    @content;
+  }
+}
+@mixin last-four($num) {
+  &:nth-last-child(4n + #{$num}) {
+    @content;
+  }
+}

@@ -288,4 +288,124 @@ img {
   line-height: 1.16667;
   letter-spacing: 0.03em;
 }
+
+.section--reset {
+  padding-top: 0px;
+}
+
+.section--background {
+  background-color: #f5f4fa;
+}
+
+.works-list {
+  display: flex;
+}
+
+.works-list__item {
+  margin-right: 30px;
+}
+
+.works-list__item:nth-last-child(3n + 1) {
+  margin-right: 0px;
+}
+
+.works-list__thumb {
+  position: relative;
+}
+
+.works-list__textbox {
+  position: absolute;
+  width: 370px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  margin: 0px;
+  left: 0px;
+  bottom: 0px;
+  text-align: center;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.works-list__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14286;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.team-cards {
+  display: flex;
+}
+
+.team-cards__item {
+  background-color: #fff;
+  margin-right: 30px;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.team-cards__item:nth-last-child(4n + 1) {
+  margin-right: 0px;
+}
+
+.team-cards__box {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.team-cards__title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.1875;
+  letter-spacing: 0.03em;
+  color: black;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.team-cards__text {
+  font-weight: 16px;
+  font-size: 16px;
+  line-height: 1.1875;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons__item {
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.social-icons__item:nth-last-child(4n + 1) {
+  margin-right: 0px;
+}
+
+.social-icons__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #afb1b8;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: "fill,background-color";
+}
+
+.social-icons__link:hover, .social-icons__link:focus {
+  fill: #fff;
+  background-color: #2196f3;
+}
 /*# sourceMappingURL=main.css.map */
