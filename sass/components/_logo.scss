@@ -1,11 +1,8 @@
-.page-header__logo {
+.logo {
   color: $accent-Color;
   margin-right: 93px;
 
   font-family: Raleway, sans-serif;
   @include font-style(700, 26px, 31px);
   @extend %link;
-}
-.page-header__logo--color {
-  color: $black-color;
 }
