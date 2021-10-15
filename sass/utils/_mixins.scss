@@ -4,7 +4,8 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-// @include animation($properties: 'color,background-color');
+// @include animation($properties: color);
+// -------------------------------------------------------------------
 
 @mixin flex-center($type: flex, $justify: center, $aling: center) {
   display: $type;
@@ -13,24 +14,19 @@
 }
 
 // @include flex-center(flex, space-between);
+// -------------------------------------------------------------------
 
-@mixin font-style(
-  // $family: Roboto sans-serif,
-  $weight: 400,
-  $size: 16px,
-  $height: 16px,
-  $spacing: 0.03em
-) {
-  // font-family: $family;
+@mixin font-style($weight: 400, $size: 16px, $height: 16px, $spacing: 0.03em) {
   font-weight: $weight;
   font-size: $size;
   line-height: $height/$size;
   letter-spacing: $spacing;
 }
 
-// @include font-style(700, $size: 16px, $height: 30px, $spacing: 0.06em);
+// @include font-style($size: 16px, $height: 30px);
 
 // @include font-style(700, 16px, 30px, 0.06em);
+// --------------------------------------------------------------------
 
 @mixin last-three($num) {
   &:nth-last-child(3n + #{$num}) {
