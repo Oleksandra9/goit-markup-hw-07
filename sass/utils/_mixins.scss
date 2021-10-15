@@ -1,7 +1,7 @@
 @mixin animation($properties: 'All') {
+  transition-property: $properties;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: $properties;
 }
 
 // @include animation($properties: 'color,background-color');
@@ -39,6 +39,11 @@
 }
 @mixin last-four($num) {
   &:nth-last-child(4n + #{$num}) {
+    @content;
+  }
+}
+@mixin last-row($num) {
+  &:nth-last-child(-n + #{$num}) {
     @content;
   }
 }
