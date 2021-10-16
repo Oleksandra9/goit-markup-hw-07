@@ -1,13 +1,10 @@
 .page-header {
   border-bottom: 1px solid #ececec;
 }
-.header-container {
+.page-header__container {
   @include flex-center($justify: space-between);
 }
 .navigation {
   display: flex;
   align-items: center;
-}
-.page-header__logo--color {
-  color: $black-color;
 }

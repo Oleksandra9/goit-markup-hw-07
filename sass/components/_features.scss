@@ -21,7 +21,7 @@
 .features__text {
   @include font-style($size: 14px, $height: 24px);
 }
-.features__icon {
+.features__box {
   @include flex-center();
   background-color: $third-Background-Color;
   margin-bottom: 30px;

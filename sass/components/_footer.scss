@@ -22,9 +22,7 @@
   margin-bottom: 20px;
   display: inline-block;
 }
-.footer__logo--color {
-  color: $white-color;
-}
+
 .address__item {
   margin-bottom: 9px;
   @include font-style($size: 14px, $height: 24px);

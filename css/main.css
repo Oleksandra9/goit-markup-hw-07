@@ -277,7 +277,7 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
-.header-container {
+.page-header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -288,10 +288,6 @@ img {
   align-items: center;
 }
 
-.page-header__logo--color {
-  color: black;
-}
-
 .logo {
   color: #2196f3;
   margin-right: 93px;
@@ -300,6 +296,14 @@ img {
   font-size: 26px;
   line-height: 1.19231;
   letter-spacing: 0.03em;
+}
+
+.logo__part--blackcolor {
+  color: black;
+}
+
+.logo__part--whitecolor {
+  color: #fff;
 }
 
 .site-nav {
@@ -429,6 +433,14 @@ img {
   letter-spacing: 0.03em;
 }
 
+.logo__part--blackcolor {
+  color: black;
+}
+
+.logo__part--whitecolor {
+  color: #fff;
+}
+
 .features {
   display: flex;
 }
@@ -459,7 +471,7 @@ img {
   letter-spacing: 0.03em;
 }
 
-.features__icon {
+.features__box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -486,7 +498,7 @@ img {
   letter-spacing: 0.03em;
 }
 
-.section--reset {
+.section--reset-padding {
   padding-top: 0px;
 }
 
@@ -670,10 +682,6 @@ img {
   display: inline-block;
 }
 
-.footer__logo--color {
-  color: #fff;
-}
-
 .address__item {
   margin-bottom: 9px;
   font-weight: 400;
@@ -825,8 +833,8 @@ img {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-cards__link:hover .portfolio-cards__window,
-.portfolio-cards__link:focus .portfolio-cards__window {
+.portfolio-cards__link:hover .portfolio-cards__overlay,
+.portfolio-cards__link:focus .portfolio-cards__overlay {
   transform: translateY(0%);
 }
 
@@ -835,21 +843,21 @@ img {
   overflow: hidden;
 }
 
-.portfolio-cards__window {
+.portfolio-cards__overlay {
   position: absolute;
   top: 0px;
   left: 0px;
   width: 100%;
   height: 100%;
-  background-color: rgba(33, 150, 243, 0.9);
+  background-color: rgba(248, 17, 152, 0.9);
   padding: 63px 24px;
-  transform: translateY(101%);
+  transform: translateY(150%);
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-cards__reason {
+.portfolio-cards__ovarlay-text {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.55556;
