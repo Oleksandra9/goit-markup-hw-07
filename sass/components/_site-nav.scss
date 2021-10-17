@@ -3,9 +3,9 @@
 }
 .site-nav__item {
   margin-right: 50px;
-}
-.site-nav__item:last-child {
-  margin-right: 0px;
+  &:last-child {
+    margin-right: 0px;
+  }
 }
 .site-nav__link {
   color: $black-color;
@@ -21,7 +21,7 @@
 
   @include animation($properties: color);
 
-  @extend %link;
+  // @extend %link;
 
   &:hover,
   &:focus {

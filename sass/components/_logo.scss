@@ -4,7 +4,7 @@
 
   font-family: Raleway, sans-serif;
   @include font-style(700, 26px, 31px);
-  @extend %link;
+  // @extend %link;
 }
 .logo__part--blackcolor {
   color: $black-color;

@@ -3,10 +3,11 @@
 }
 .partners-logo__item {
   margin-right: 30px;
+  &:last-child {
+    margin-right: 0px;
+  }
 }
-.partners-logo__item:last-child {
-  margin-right: 0px;
-}
+
 .partners-logo__link {
   @include flex-center();
   width: 170px;

@@ -135,5 +135,7 @@
   @include animation($properties: 'background-color,border');
 }
 .modal-form__checkbox-label--link {
+  margin-left: 5px;
   color: $accent-Color;
+  text-decoration: underline;
 }

@@ -33,7 +33,7 @@
 .address__link {
   color: $white-color;
   @include font-style($size: 14px, $height: 24px);
-  @extend %link;
+  // @extend %link;
   @include animation($properties: 'color');
   &:hover,
   &:focus {

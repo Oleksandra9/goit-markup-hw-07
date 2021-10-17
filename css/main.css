@@ -42,7 +42,7 @@ img {
   height: auto;
 }
 
-.logo, .site-nav__link, .site-contacts__link, .address__link, .portfolio-cards__link {
+a {
   text-decoration: none;
   font-style: normal;
 }
@@ -237,7 +237,9 @@ img {
 }
 
 .modal-form__checkbox-label--link {
+  margin-left: 5px;
   color: #2196f3;
+  text-decoration: underline;
 }
 
 .button {
@@ -448,6 +450,10 @@ img {
 .features__item {
   margin-right: 30px;
   width: 270px;
+}
+
+.features__item:last-child {
+  margin-right: 0px;
 }
 
 .features__item:last-child {
@@ -833,8 +839,8 @@ img {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-cards__link:hover .portfolio-cards__overlay,
-.portfolio-cards__link:focus .portfolio-cards__overlay {
+.portfolio-cards__link:hover .portfolio-cards__window,
+.portfolio-cards__link:focus .portfolio-cards__window {
   transform: translateY(0%);
 }
 
@@ -843,21 +849,22 @@ img {
   overflow: hidden;
 }
 
-.portfolio-cards__overlay {
+.portfolio-cards__window {
   position: absolute;
   top: 0px;
   left: 0px;
   width: 100%;
   height: 100%;
-  background-color: rgba(248, 17, 152, 0.9);
+  background-color: rgba(33, 150, 243, 0.9);
   padding: 63px 24px;
-  transform: translateY(150%);
+  transform: translateY(101%);
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: brown;
 }
 
-.portfolio-cards__ovarlay-text {
+.portfolio-cards__reason {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.55556;
@@ -879,6 +886,7 @@ img {
 }
 
 .portfolio-cards__text {
+  color: #757575;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.875;

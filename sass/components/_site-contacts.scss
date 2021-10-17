@@ -3,10 +3,11 @@
 }
 .site-contacts__item {
   margin-right: 50px;
+  &:last-child {
+    margin-right: 0px;
+  }
 }
-.site-contacts__item:last-child {
-  margin-right: 0px;
-}
+
 .site-contacts__link {
   color: $main-Text-Color;
 }
@@ -20,7 +21,7 @@
 
   @include animation($properties: color fill);
 
-  @extend %link;
+  // @extend %link;
 
   &:hover,
   &:focus {

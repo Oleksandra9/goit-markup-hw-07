@@ -44,7 +44,7 @@
 }
 .portfolio-cards__link {
   width: 370px;
-  @extend %link;
+  // @extend %link;
   @include animation($properties: box-shadow);
   &:hover,
   &:focus {
@@ -71,6 +71,7 @@
 
   transform: translateY(101%);
   @include animation($properties: transform);
+  background-color: brown;
 }
 .portfolio-cards__reason {
   @include font-style(400, 18px, 28px);
@@ -85,5 +86,6 @@
   color: $black-color;
 }
 .portfolio-cards__text {
+  color: $main-Text-Color;
   @include font-style(400, 16px, 30px);
 }
